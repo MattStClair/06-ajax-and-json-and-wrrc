@@ -56,9 +56,8 @@ Article.fetchAll = function() {
     var newData = JSON.parse(localStorage.rawData);
     Article.loadAll(newData);
     console.log('here is the data');
-    //TODO: What method do we call to render the index page?
-    articleView.initIndexPage(); 
-
+    //DONE: What method do we call to render the index page?
+    articleView.initIndexPage();
   } else {
     // DONE: When we don't already have the rawData,
     $.getJSON('data/hackerIpsum.json').then(
